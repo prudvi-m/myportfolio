@@ -95,9 +95,7 @@
                     <a href="#"><img src="images/prudvi.jpeg" alt="Image" /></a>
                   </div>
                   <div class="h2 title">Prudvi</div>
-                  <p class="category text-white">
-                    Web Developer, Graphic Designer, Photographer
-                  </p>
+                  <p class="category text-white">Full Stack Web Developer</p>
                   <a
                     class="btn btn-primary smooth-scroll mr-2"
                     href="#contact"
@@ -154,10 +152,7 @@
                 <div class="col-lg-6 col-md-12">
                   <div class="card-body">
                     <div class="h4 mt-0 title">About</div>
-                    <p>
-                      Hello! I am Prudvi. Web Developer, Graphic Designer and
-                      Photographer.
-                    </p>
+                    <p>Hello! I am Prudvi. Full Stack Web Developer.</p>
                     <p>
                       Creative CV is a HTML resume template for professionals.
                       Built with Bootstrap 4, Now UI Kit and FontAwesome, this
@@ -178,13 +173,13 @@
                       <div class="col-sm-4">
                         <strong class="text-uppercase">Age:</strong>
                       </div>
-                      <div class="col-sm-8">24</div>
+                      <div id="divAge" class="col-sm-8"></div>
                     </div>
                     <div class="row mt-3">
                       <div class="col-sm-4">
                         <strong class="text-uppercase">Email:</strong>
                       </div>
-                      <div class="col-sm-8">anthony@company.com</div>
+                      <div class="col-sm-8">prudvi1203@gmail.com</div>
                     </div>
                     <div class="row mt-3">
                       <div class="col-sm-4">
@@ -1060,5 +1055,28 @@
     <script src="js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="js/aos.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+    <script>
+      // Function to calculate age based on date of birth
+      function calculateAge(dateOfBirth) {
+        const today = new Date();
+        const birthDate = new Date(dateOfBirth);
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const month = today.getMonth() - birthDate.getMonth();
+        if (
+          month < 0 ||
+          (month === 0 && today.getDate() < birthDate.getDate())
+        ) {
+          age--;
+        }
+        return age;
+      }
+
+      // Update age dynamically based on date of birth
+      window.onload = function () {
+        const dateOfBirth = "1996-3-16"; // Replace with your actual date of birth
+        const age = calculateAge(dateOfBirth);
+        document.getElementById("divAge").textContent = age.toString();
+      };
+    </script>
   </body>
 </html>

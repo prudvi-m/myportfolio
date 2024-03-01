@@ -1,0 +1,23 @@
+https://templateflip.com/demo/templates/material-resume/
+
+https://templateflip.com/demo/templates/right-resume/
+
+
+
+CSS Animations Codepen
+
+https://codepen.io/ykadosh/pen/XWBKjEV
+
+BackLight: https://codepen.io/georgehastings/pen/xgwxgo
+
+Basic Card with url optiond on hover: https://codepen.io/z-/pen/WNbMjEW
+
+Social card Hover:  https://codepen.io/AdamDipinto/pen/JjPmxPe
+
+Card Filtering: https://codepen.io/steveeeie/pen/NVWMEM
+
+Material Cards :  https://codepen.io/abhishek747/pen/BbWKVa
+
+Infinite Scroll techstack: https://codepen.io/ykadosh/pen/XWBKjEV
+
+Tech Stack Hover give the info: https://codepen.io/DanielRamos/pen/EVrmor
